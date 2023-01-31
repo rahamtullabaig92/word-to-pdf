@@ -1,10 +1,15 @@
+
 <html>
-  <head>
-    <title>My Web Page</title>
-  </head>
-  <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample HTML page.</p>
-    <a href="https://www.example.com">Visit Example.com</a>
-  </body>
+<head>
+  <title>Word to PDF Converter</title>
+</head>
+<body>
+  <h1>Word to PDF Converter</h1>
+  <form action="https://api.cloudconvert.com/convert" method="post">
+    <input type="file" name="inputfile">
+    <input type="hidden" name="apikey" value="<your_api_key>">
+    <input type="hidden" name="outputformat" value="pdf">
+    <input type="submit" value="Convert">
+  </form>
+</body>
 </html>
